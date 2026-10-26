@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud html</title>
+</head>
+<body>
+    <form action="cada.php" method="post">
+        <label for="txtnome">Nome </label>
+        <input type="text" id="txtnome" name="txtnome">
+
+        <label for="txtemail">Email </label>
+        <input type="text" id="txtemail" name="txtemail">
+
+        <label for="txtsenh">Senha </label>
+        <input type="text" id="txtsenh" name="txtsenh">
+
+        <input type="radio" id="txtsexom" name="txtsexo" value="M">
+        <input type="radio" id="txtsexof" name="txtsexo" value="F">
+
+        <input type="submit" value="cadastrar">
+        <input type="reset" value="limpar" onclick="document.getElementById('tnome').focus">
+        <input type="button" value="menu" onclick="location.href='index.html'">
+    </form>
+</body>
+</html>
