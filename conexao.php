@@ -3,5 +3,7 @@
     $usuario="root";
     $senha="12345678";
     $banco="dbTeste";
-    $cmd=new PDO("mysql:host-$sevidor;dbname-$banco",$usuario,$senha);
+    $porta="3305";
+    $cmd=new PDO("mysql:host=$sevidor;port=$porta;dbname=$banco",$usuario,$senha);
+
 ?>

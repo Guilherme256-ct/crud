@@ -8,19 +8,21 @@
 <body>
     <form action="cada.php" method="post">
         <label for="txtnome">Nome </label>
-        <input type="text" id="txtnome" name="txtnome">
+        <input type="text" id="txtnome" name="txtnome" required>
 
         <label for="txtemail">Email </label>
-        <input type="text" id="txtemail" name="txtemail">
+        <input type="text" id="txtemail" name="txtemail" required>
 
         <label for="txtsenh">Senha </label>
-        <input type="text" id="txtsenh" name="txtsenh">
+        <input type="text" id="txtsenh" name="txtsenh" required>
 
-        <input type="radio" id="txtsexom" name="txtsexo" value="M">
+        <label for="txtsexom">M </label>
+        <input type="radio" id="txtsexom" name="txtsexo" value="M" checkedJ>
+        <label for="txtsexof">F </label>
         <input type="radio" id="txtsexof" name="txtsexo" value="F">
 
         <input type="submit" value="cadastrar">
-        <input type="reset" value="limpar" onclick="document.getElementById('tnome').focus">
+        <input type="reset" value="limpar" onclick="document.getElementById('txtnome').focus()">
         <input type="button" value="menu" onclick="location.href='index.html'">
     </form>
 </body>
