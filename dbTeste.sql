@@ -11,3 +11,4 @@ create table tbTeste(
 );
 
 describe tbTeste;
+select * from tbTeste;
