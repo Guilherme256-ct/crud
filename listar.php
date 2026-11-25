@@ -1,12 +1,18 @@
+<h1>Listar Registros</h1>
+<h4><a href='index.html'>Menu</a></h4>
+<hr/>
+<form action="pesquisar.php" method="post">
+    <label for="txtnome">Nome: </label>
+    <input type="text" id="txtnome" name="txtnome">
+    <input type="submit" value="Pesquisar">
+</form>
+<hr>
 <?php
     echo"<link rel=stylesheet' type='test/css' href='style.css'/>";
     include "conexao.php";
     $listar=$cmd->query("select * from tbTeste");
     $total_registros=$listar->rowCount();
     if($total_registros> 0){
-        echo"<h1>Listar Registros</h1>";
-        echo "<h4><a href='index.html'>Menu</a> <a href='pesquisar.php'>Pesquisar</a></h4>";
-        echo "<hr/>";
         echo "<table>";
         echo "<tr> 
             <th colspan=6>
